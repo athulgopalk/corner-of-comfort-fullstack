@@ -1,0 +1,79 @@
+.v-container .image-container {
+    border: 8px solid rgb(232, 232, 232, 0.93);
+    border-radius: 10px;
+    /* Added border-radius for a softer look */
+}
+
+.v-container>div {
+    flex: 1;
+}
+
+.v-right {
+    gap: 0.5rem;
+}
+
+.accordion {
+    margin-top: 2rem;
+    border: none;
+}
+
+.accordionItem {
+    background: #f9f9f9;
+    /* Changed background color for better contrast */
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    /* Adjusted border */
+    border-radius: 12px;
+    /* Increased border-radius for smoother corners */
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Added box-shadow for depth */
+}
+
+.accordionButton {
+    background: #ffffff;
+    /* Changed background color for consistency */
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    /* Added to align icon and text */
+    align-items: center;
+    /* Centered vertically */
+    justify-content: space-between;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* Added transition for smoother hover effect */
+}
+
+.accordionButton:hover {
+    background-color: #f0f0f0;
+    /* Adjusted hover background color */
+}
+
+.icon {
+    padding: 10px;
+    background: #eeeeff;
+    border-radius: 50%;
+    /* Changed border-radius for a circular shape */
+}
+
+.icon svg {
+    fill: var(--blue);
+}
+
+.accordionButton .primaryText {
+    font-size: 1rem;
+}
+
+@media (max-width: 1024px) {
+    .v-container {
+        flex-direction: column;
+    }
+
+    /* Added missing media query */
+    @media (max-width: 768px) {
+        .accordionButton .primaryText {
+            font-size: 0.8rem;
+        }
+    }
+}
